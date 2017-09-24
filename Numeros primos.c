@@ -41,7 +41,7 @@ while (x==1);
 
 
 if (x==2)
-    printf("\nObrigado, ate a proxima! Para ver meu codigo entre no link.\n\n");
+    printf("\nObrigado, ate a proxima! Para ver meu codigo entre no link: https://github.com/GuilhermeAs7/Prog1/blob/master/Numeros%20primos.c \n\n");
 
 system("pause");
 return 0;
