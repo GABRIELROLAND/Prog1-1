@@ -30,3 +30,4 @@ if(x==2)
 system("pause");
 return 0;
 }
+
