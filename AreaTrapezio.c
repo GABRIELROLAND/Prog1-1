@@ -15,12 +15,12 @@ int main()
     scanf("%f",&b);
     printf("\nEntre com o valor da base maior do trapezio: ");
     scanf("%f",&B);
-    if(b>B)
+    if(b>=B)
     {
         printf("\n\nEntre com os valores corretos da Base maior e menor. Tente novamente:\n\n");
     }
     }
-    while(b>B);
+    while(b>=B);
     a=(h*(B+b))/2;
     printf("\nA area do trapezio = %.2f\n",a);
     printf("\nDeseja calcular novamente(1-Sim/2-Nao)? ");
