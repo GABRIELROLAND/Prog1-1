@@ -14,18 +14,18 @@ int main (){
     printf("Bem vindo ao jogo da forca realizado por: \nGuilherme Alexandre, Gabriel Roland e Leonardo Martelotte.\n\n");
     printf("Uma palavra de 5 letras aleatoria sera escolhida e voce precisa acertar!\n\n\n");
     start:
-	setlocale(LC_ALL,"PORTUGUESE"); // indica a lÌngua utilizada
+	setlocale(LC_ALL,"PORTUGUESE"); // indica a l√≠ngua utilizada
 	int acertos=0,erros=0,num_palavra=0,i, j,exec=1,tam;
 	int jogando;
-	char *palavra;   // char * e char [] s„o tipos diferentes, mas n„o È imediatamente aparente em todos os casos. Isso ocorre porque os arrays se decompıem em ponteiros, o que significa que se uma express„o do tipo char [] for fornecida onde um do tipo char * for esperado, o compilador converte automaticamente a matriz em um ponteiro para seu primeiro elemento.
-    char lacuna[20]="_";
+	char *palavra;   // char * e char [] s√£o tipos diferentes, mas n√£o √© imediatamente aparente em todos os casos. Isso ocorre porque os arrays se decomp√µem em ponteiros, o que significa que se uma express√£o do tipo char [] for fornecida onde um do tipo char * for esperado, o compilador converte automaticamente a matriz em um ponteiro para seu primeiro elemento.
+        char lacuna[20]="_";
 	char letra,letraserradas[25];
 	system("PAUSE");
 	system("cls");
 	srand(time(NULL));
 	num_palavra=(rand() % 11);   //possibilidade de cair a palavra.
 
- 	// switch … uma forma de reduzir a complexidade de v·rios if Ö else encadeados
+ 	// switch √â uma forma de reduzir a complexidade de v√°rios if ‚Ä¶ else encadeados
 	switch (num_palavra){
 	case 1:
 		palavra = "arroz";
@@ -109,7 +109,7 @@ int main (){
 	exec = 0;
 	system("cls");
 	printf(" +-------+\n |       |\n |       |\n |       o\n |      /|\\\n |      / \\\n_|_\t\t%s",lacuna);
-	printf("\n\nN„o foi dessa vez. VocÍ perdeu o jogo, jogue novamente!");
+	printf("\n\nN√£o foi dessa vez. Voc√™ perdeu o jogo, jogue novamente!");
 	printf("\n\nA palavra era: %s.\n\n\n",palavra);
     fflush(stdin); //limpa o buffer do teclado pra evitar quaisquer erros
     goto start;
